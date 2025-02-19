@@ -18,6 +18,12 @@ public class ContentEntity {
         this.content = content;
     }
 
+    public ContentEntity(int id, String title, String content) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

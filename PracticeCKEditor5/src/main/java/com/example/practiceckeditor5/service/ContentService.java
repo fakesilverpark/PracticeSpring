@@ -40,4 +40,10 @@ public class ContentService {
 
         contentRepository.deleteById(id);
     }
+
+    public void updateContentById(int id, SaveDTO saveDTO){
+
+        ContentEntity data = new ContentEntity(id, saveDTO.getTitle(), saveDTO.getContent());
+        contentRepository.save(data);
+    }
 }
