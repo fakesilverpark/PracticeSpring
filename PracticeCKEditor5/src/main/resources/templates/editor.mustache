@@ -4,17 +4,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/translations/ko.js"></script>
     <title>Document</title>
 </head>
 <body>
     <p>Editor Page</p>
     <hr>
     <form action="/save" method="POST">
-        <input name="title" type="text" placeholder="Title"/>
-        <br>
-        <textarea name="content" id="content"></textarea>
-        <br>
-        <input type="submit" value="Submit"/>
+        <input name="title" type="text" placeholder="제목"/><br>
+        <textarea name="content" id="content"></textarea><br>
+        <input type="submit" value="등록">
     </form>
+    <script>
+
+        ClassicEditor.create( document.querySelector( '#content' ), {
+
+            language: "ko"
+        } );
+
+    </script>
 </body>
 </html>
