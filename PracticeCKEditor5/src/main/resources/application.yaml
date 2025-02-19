@@ -16,12 +16,6 @@ spring:
       ddl-auto: create
     show-sql: true
 
-  logging:
-    level:
-      org:
-        hibernate:
-          SQL: debug
-          type: trace
 server:
   servlet:
     encoding:
