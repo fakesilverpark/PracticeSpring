@@ -2,26 +2,26 @@ spring:
   application:
     name: PracticeCKEditor5
 
-#  datasource:
-#    driver-class-name: org.mariadb.jdbc.Driver
-#    url: ${DB_URL}
-#    username: ${DB_USERNAME}
-#    password: ${DB_PASSWORD}
-#
-#  jpa:
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.MariaDBDialect
-#    hibernate:
-#      ddl-auto: create
-#    show-sql: true
-#
-#  logging:
-#    level:
-#      org:
-#        hibernate:
-#          SQL: debug
-#          type: trace
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  logging:
+    level:
+      org:
+        hibernate:
+          SQL: debug
+          type: trace
 server:
   servlet:
     encoding:
