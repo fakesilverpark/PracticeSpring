@@ -6,6 +6,8 @@ import com.example.practiceckeditor5.repository.ContentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class ContentService {
@@ -22,5 +24,10 @@ public class ContentService {
         contentRepository.save(contentData);
 
         System.out.println("Saved Content");
+    }
+
+    public List<ContentEntity> selectContent(){
+
+        return contentRepository.findAll();
     }
 }

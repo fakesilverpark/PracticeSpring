@@ -15,8 +15,6 @@ public class SaveController {
     @PostMapping("/save")
     public String saveFunc(SaveDTO saveDTO) {
 
-        System.out.println(saveDTO);
-
         contentService.saveContent(saveDTO);
 
         return "redirect:/";
