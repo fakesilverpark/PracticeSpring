@@ -22,3 +22,8 @@ spring:
 #        hibernate:
 #          SQL: debug
 #          type: trace
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
