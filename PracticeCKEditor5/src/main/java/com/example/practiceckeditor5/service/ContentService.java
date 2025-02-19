@@ -35,4 +35,9 @@ public class ContentService {
 
         return contentRepository.findById(id);
     }
+
+    public void deleteContentById(int id){
+
+        contentRepository.deleteById(id);
+    }
 }
