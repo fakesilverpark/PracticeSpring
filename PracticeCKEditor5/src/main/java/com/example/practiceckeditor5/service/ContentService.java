@@ -30,4 +30,9 @@ public class ContentService {
 
         return contentRepository.findAll();
     }
+
+    public ContentEntity selectContentById(int id){
+
+        return contentRepository.findById(id);
+    }
 }
