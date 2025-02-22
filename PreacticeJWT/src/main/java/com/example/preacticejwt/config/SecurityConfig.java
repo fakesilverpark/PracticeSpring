@@ -19,6 +19,12 @@ public class SecurityConfig {
         http
                 .formLogin((auth) -> auth.disable());
 
+<<<<<<< HEAD
+=======
+        http
+                .httpBasic((auth) -> auth.disable());
+
+>>>>>>> 5e91bdd (250222 : PracticeJWT http basic 방식 disable)
         return http.build();
     }
 }
