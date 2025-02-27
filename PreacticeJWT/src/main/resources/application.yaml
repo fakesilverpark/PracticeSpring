@@ -22,3 +22,6 @@ spring:
         hibernate:
           SQL: debug
           type: trace
+
+  jwt:
+    secret: {JWT_SECRET}
