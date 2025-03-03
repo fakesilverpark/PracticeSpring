@@ -24,4 +24,4 @@ spring:
           type: trace
 
   jwt:
-    secret: {JWT_SECRET}
+    secret: ${SECRET_KEY}
