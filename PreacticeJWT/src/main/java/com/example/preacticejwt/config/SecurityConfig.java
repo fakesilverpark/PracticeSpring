@@ -1,5 +1,6 @@
 package com.example.preacticejwt.config;
 
+import com.example.preacticejwt.jwt.JWTFilter;
 import com.example.preacticejwt.jwt.JWTUtil;
 import com.example.preacticejwt.jwt.LoginFilter;
 import lombok.RequiredArgsConstructor;
@@ -50,6 +51,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests((auth) -> auth
                         .requestMatchers("login", "/", "join").permitAll()
                         .anyRequest().authenticated());
+
+        http
+                .addFilterBefore(new JWTFilter(jwtUtil), LoginFilter.class);
 
         http
                 .addFilterAt(new LoginFilter(authenticationManager(authenticationConfiguration), jwtUtil), UsernamePasswordAuthenticationFilter.class);
