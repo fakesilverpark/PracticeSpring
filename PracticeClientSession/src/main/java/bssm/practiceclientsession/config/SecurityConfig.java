@@ -1,8 +1,8 @@
 package bssm.practiceclientsession.config;
 
+import bssm.practiceclientsession.service.CustomOAuth2UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -13,7 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http, CustomOAuth2UserService customOAuth2UserService) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable);
         http
@@ -21,7 +21,9 @@ public class SecurityConfig {
         http
                 .httpBasic(AbstractHttpConfigurer::disable);
         http
-                .oauth2Login(Customizer.withDefaults());
+                .oauth2Login((oauth2) -> oauth2
+                        .userInfoEndpoint((userInfoEndpointConfig) -> userInfoEndpointConfig
+                                .userService(customOAuth2UserService)));
         http
                 .authorizeHttpRequests((auth) -> auth
                         .requestMatchers("/", "/oauth2/**", "/login/**").permitAll()
