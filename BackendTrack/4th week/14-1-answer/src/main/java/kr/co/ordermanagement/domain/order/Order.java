@@ -1,5 +1,6 @@
 package kr.co.ordermanagement.domain.order;
 
+import kr.co.ordermanagement.domain.exception.CancelNotAllowedException;
 import kr.co.ordermanagement.domain.product.Product;
 
 import java.util.List;
@@ -61,6 +62,13 @@ public class Order {
     }
 
     public void cancel() {
+        // if (!CREATED.equals(this.state)){
+        //     throw new CancelNotAllowedException("이미 취소되었거나 취소할 수 없는 주문상태입니다.");
+        // }
+        // 추가 요청 사항이 생겨서 변경된 로직에 따라 if 문이 추가되면 별로임
+        // 다른걸 쓰는게 좋음, 도메인 메서드
+
+        this.state.checkCancelability();
         this.state = CANCELED;
     }
 
