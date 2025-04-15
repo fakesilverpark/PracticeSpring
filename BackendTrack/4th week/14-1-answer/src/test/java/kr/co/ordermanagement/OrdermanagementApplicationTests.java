@@ -1,5 +1,6 @@
 package kr.co.ordermanagement;
 
+import kr.co.ordermanagement.domain.exception.NotEnoughAmountException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,7 +68,7 @@ class OrdermanagementApplicationTests {
 
 	@Test
 	@DisplayName("1-2. 주문 생성 - 실패 (수량 부족)")
-	void test1_2() throws Exception {
+	void test1_2() throws NotEnoughAmountException {
 		byte[] body = """
 				[
 					{

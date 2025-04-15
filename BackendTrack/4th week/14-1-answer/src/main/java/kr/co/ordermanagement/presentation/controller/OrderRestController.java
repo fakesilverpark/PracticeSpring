@@ -27,9 +27,7 @@ public class OrderRestController {
     public OrderResponseDto createOrder(
             @RequestBody List<OrderProductRequestDto> orderProductRequestDtos
             ){
-        OrderResponseDto orderResponseDto = simpleOrderService.createOrder(orderProductRequestDtos);
-
-        return orderResponseDto;
+        return simpleOrderService.createOrder(orderProductRequestDtos);
     }
 //    public ResponseEntity<OrderResponseDto> createOrder(
 //            @RequestBody List<OrderProductRequestDto> orderProductRequestDtos

@@ -67,7 +67,7 @@ public class Order {
         // }
         // 추가 요청 사항이 생겨서 변경된 로직에 따라 if 문이 추가되면 별로임
         // 다른걸 쓰는게 좋음, 도메인 메서드
-
+        // State.checkCancelability(); <- static 메서드 라면
         this.state.checkCancelability();
         this.state = CANCELED;
     }

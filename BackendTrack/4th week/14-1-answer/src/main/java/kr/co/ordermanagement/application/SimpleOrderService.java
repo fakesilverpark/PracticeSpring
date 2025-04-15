@@ -40,8 +40,7 @@ public class SimpleOrderService {
         orderRepository.add(order);
 
         // 생성된 주문을 OrderResponseDto 변환해서 컨트롤러에 반환
-        OrderResponseDto orderResponseDto = OrderResponseDto.toDto(order);
-        return orderResponseDto;
+        return OrderResponseDto.toDto(order);
     }
 
     private void decreaseProductsAmount(List<Product> orderProducts) {
