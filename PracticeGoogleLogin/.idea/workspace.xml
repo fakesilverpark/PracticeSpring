@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8c19f01-3637-4d0a-8f24-24f3bc49d253" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/src/main/java/gaeun/practicebsmoauthlogin/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/src/main/java/gaeun/practicebsmoauthlogin/BsmOauthConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/src/main/java/gaeun/practicebsmoauthlogin/OAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/src/main/java/gaeun/practicebsmoauthlogin/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendTrack/4th week/14-1-ans/src/main/java/kr/co/ordermanagement/domain/order/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendTrack/4th week/14-1-ans/src/main/java/kr/co/ordermanagement/presentation/dto/ChangeOrderStateRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendTrack/5th week's Test Preparation/first try/14-1/src/main/java/kr/co/ordermanagement/presentation/dto/ChangeOrderStateRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeBsmOAuthLogin/PracticeBsmOAuthLogin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/KakaoLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/KakaoLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/KakaoLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/KakaoLoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/dto/KakaoTokenResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/controller/dto/KakaoTokenResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/service/KakaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/java/gaeun/practicekakaologin/service/KakaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeKakaoLogin/PracticeKakaoLogin/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PreacticeJWT/src/main/java/com/example/preacticejwt/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PreacticeJWT/src/main/java/com/example/preacticejwt/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PreacticeJWT/src/main/java/com/example/preacticejwt/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PreacticeJWT/src/main/java/com/example/preacticejwt/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/Heart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/Heart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/java/bssm/unexpected_stories_back_v2/domain/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unexpected_Stories_Back_V2/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/repository/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/repository/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/service/SimpleBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../crud/src/main/java/bssm/crud/service/SimpleBoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../crud/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2yicHKaSZauhLBEViv5OC1XqRxo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/exn199/Desktop/SILVER/PracticeSpring/PracticeGoogleLogin",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c8c19f01-3637-4d0a-8f24-24f3bc49d253" name="변경" comment="" />
+      <created>1750320746184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750320746184</updated>
+      <workItem from="1750320747725" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
