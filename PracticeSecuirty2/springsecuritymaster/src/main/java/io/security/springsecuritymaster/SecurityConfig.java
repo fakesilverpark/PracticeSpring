@@ -1,15 +1,24 @@
 package io.security.springsecuritymaster;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
+import java.io.IOException;
 
 @EnableWebSecurity
 @Configuration
@@ -19,7 +28,35 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated()) //http 통신에 대한 인가 정책 설정
-                .formLogin(Customizer.withDefaults());
+                .formLogin(form -> form
+//                        .loginPage("/loginPage") // 이렇게 지정하면 스프링 시큐리티가 제공하는 로그인 화면이 안 나옴
+                        .loginProcessingUrl("/loginProc")
+                        .defaultSuccessUrl("/", true)
+                        .failureUrl("/failed")
+                        .usernameParameter("usernId")
+                        .passwordParameter("passwd")
+/*
+                        아래의 핸들러가 있다면 위에 defaultSuccessUrl, failureUrl 보다 아래 핸들러가 우선시
+
+                        .successHandler((request, response, authentication) -> {
+                            System.out.println("authentication : " + authentication);
+                            response.sendRedirect("/home");
+                        })
+                        .failureHandler((request, response, exception) -> {
+                            System.out.println("exception : " + exception);
+                            response.sendRedirect("/login");
+                        })
+*/
+                                .permitAll()
+                )
+                .rememberMe(rememberMe -> rememberMe
+//                        .alwaysRemember(true)
+                        .tokenValiditySeconds(30)
+                        .userDetailsService(userDetailsService())
+                        .rememberMeParameter("remember")
+                        .rememberMeCookieName("remember")
+                        .key("security")
+                );
         return http.build();
     }
 
