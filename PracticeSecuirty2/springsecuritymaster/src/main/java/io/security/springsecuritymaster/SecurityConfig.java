@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -27,7 +28,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .authorizeHttpRequests(auth -> auth.anyRequest().authenticated()) //http 통신에 대한 인가 정책 설정
+                //http 통신에 대한 인가 정책 설정
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/anonymous").hasRole("GUEST")
+                        .requestMatchers("/anonymousContext", "/authentication").permitAll()
+                        .anyRequest().authenticated()
+                )
                 .formLogin(form -> form
 //                        .loginPage("/loginPage") // 이렇게 지정하면 스프링 시큐리티가 제공하는 로그인 화면이 안 나옴
                         .loginProcessingUrl("/loginProc")
@@ -56,7 +62,12 @@ public class SecurityConfig {
                         .rememberMeParameter("remember")
                         .rememberMeCookieName("remember")
                         .key("security")
-                );
+                )
+                .anonymous(anonymous -> anonymous
+                        .principal("guest")
+                        .authorities("ROLE_GUEST")
+                )
+        ;
         return http.build();
     }
 
